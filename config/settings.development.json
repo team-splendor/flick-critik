@@ -9,5 +9,19 @@
     { "name": "Bicycle", "quantity": 2, "owner": "john@foo.com", "condition": "poor" },
     { "name": "Banana", "quantity": 2, "owner": "admin@foo.com", "condition": "good" },
     { "name": "Boogie Board", "quantity": 2, "owner": "admin@foo.com", "condition": "excellent" }
+  ],
+  "defaultRatings": [
+    {
+      "user": "john@foo.com",
+      "movie": "The Avengers",
+      "rating": "5",
+      "comment": "The movie was great."
+    },
+    {
+      "user": "john@foo.com",
+      "movie": "Hulk",
+      "rating": "3",
+      "comment": "The movie was average."
+    }
   ]
 }
