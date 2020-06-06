@@ -1,6 +1,6 @@
 import React from 'react';
 import { Ratings } from '/imports/api/rating/rating';
-// import { Bert } from 'meteor/themeteorchef:bert';
+import { Bert } from 'meteor/themeteorchef:bert';
 import {
   Grid,
   Header,
@@ -11,7 +11,7 @@ import {
   HeaderContent,
   Icon,
   GridRow,
-  Input
+  Input,
 } from 'semantic-ui-react';
 import { Meteor } from 'meteor/meteor';
 import PropTypes from 'prop-types';
@@ -35,7 +35,7 @@ class RatingMov extends React.Component {
     } else {
       Bert.alert({ type: 'success', message: 'Rating succeeded' });
       window.setTimeout(function () {
-        window.location.href = `/`;
+        window.location.href = '/';
       }, 1000);
     }
   }
@@ -58,7 +58,7 @@ class RatingMov extends React.Component {
 
   /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
   render() {
-    const mov = this.props.match.params.movie;
+    // const mov = this.props.match.params.movie;
     return (
         <Grid container centered>
           <Grid.Column>
