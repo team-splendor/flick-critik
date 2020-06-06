@@ -1,6 +1,6 @@
 import React from 'react';
 import { Ratings } from '/imports/api/rating/rating';
-import { Bert } from 'meteor/themeteorchef:bert';
+// import { Bert } from 'meteor/themeteorchef:bert';
 import {
   Grid,
   Header,
@@ -30,14 +30,14 @@ class RatingMov extends React.Component {
   /** Notify the user of the results of the submit. If successful, clear the form. */
   insertCallback(error) {
     // const id = this.props.match.params._id;
-    if (error) {
-      Bert.alert({ type: 'danger', message: `Rating failed: ${error.message}` });
-    } else {
-      Bert.alert({ type: 'success', message: 'Rating succeeded' });
+    // if (error) {
+    //   Bert.alert({ type: 'danger', message: `Rating failed: ${error.message}` });
+    // } else {
+    //   Bert.alert({ type: 'success', message: 'Rating succeeded' });
       window.setTimeout(function () {
         window.location.href = '/';
       }, 1000);
-    }
+    // }
   }
 
   /** On submit, insert the data. */
