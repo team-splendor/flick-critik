@@ -2,7 +2,7 @@ import React from 'react';
 import { Meteor } from 'meteor/meteor';
 import { Table } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
-import { withRouter, Link, Button } from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
 import swal from '@sweetalert/with-react';
 
 
