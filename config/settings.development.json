@@ -13,13 +13,13 @@
   "defaultRatings": [
     {
       "user": "john@foo.com",
-      "movie": "The Avengers",
+      "movie": "Uncut Gems",
       "rating": "5",
       "comment": "The movie was great."
     },
     {
       "user": "john@foo.com",
-      "movie": "Hulk",
+      "movie": "Judy Punch",
       "rating": "3",
       "comment": "The movie was average."
     }

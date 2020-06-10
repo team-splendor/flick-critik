@@ -1,6 +1,6 @@
 import React from 'react';
 import { Ratings } from '/imports/api/rating/rating';
-// import { Bert } from 'meteor/themeteorchef:bert';
+import { Bert } from 'meteor/themeteorchef:bert';
 import {
   Grid,
   Header,
@@ -11,7 +11,7 @@ import {
   HeaderContent,
   Icon,
   GridRow,
-  Input,
+  Input, TextArea,
 } from 'semantic-ui-react';
 import { Meteor } from 'meteor/meteor';
 import PropTypes from 'prop-types';
@@ -23,37 +23,45 @@ class RatingMov extends React.Component {
   constructor(props) {
     super(props);
     this.submit = this.submit.bind(this);
+    this.handleChange = this.handleChange.bind(this);
     this.handleChangeRate = this.handleChangeRate.bind(this);
     this.insertCallback = this.insertCallback.bind(this);
   }
 
   /** Notify the user of the results of the submit. If successful, clear the form. */
   insertCallback(error) {
-    // const id = this.props.match.params._id;
-    // if (error) {
-    //   Bert.alert({ type: 'danger', message: `Rating failed: ${error.message}` });
-    // } else {
-    //   Bert.alert({ type: 'success', message: 'Rating succeeded' });
+    if (error) {
+      Bert.alert({ type: 'danger', message: `Rating failed: ${error.message}` });
+    } else {
+      Bert.alert({ type: 'success', message: 'Rating succeeded' });
       window.setTimeout(function () {
         window.location.href = '/';
       }, 1000);
-    // }
+    }
   }
 
   /** On submit, insert the data. */
   submit() {
     const user = Meteor.user().username;
-    const movie = this.props.match.params.movie;
+    const movie = this.state.movie;
     if (this.state === null) {
       Bert.alert({ type: 'danger', message: 'Please enter a rating for this movie.' });
     }
     const rating = this.state.rating;
     const comment = this.state.comment;
+    console.log(user);
+    console.log(movie);
+    console.log(rating);
+    console.log(comment);
     Ratings.insert({ user, movie, rating, comment }, this.insertCallback);
   }
 
   handleChangeRate(e, { name, rating }) {
     this.setState({ [name]: rating });
+  }
+
+  handleChange(e, { name, value }) {
+    this.setState({ [name]: value });
   }
 
   /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
@@ -78,7 +86,7 @@ class RatingMov extends React.Component {
                 <HeaderContent>Movie:</HeaderContent>
               </Header>
               <FormInput required>
-                <Input name="movie"></Input>
+                <Input name="movie" onChange={this.handleChange}></Input>
               </FormInput>
               <Header as="h3" >
                 <Icon name="star" color="yellow"/>
@@ -93,7 +101,7 @@ class RatingMov extends React.Component {
                 <HeaderContent>Comments:</HeaderContent>
               </Header>
               <FormInput required>
-                <Input name="comments"></Input>
+                <TextArea name="comment" onChange={this.handleChange}></TextArea>
               </FormInput>
               <br/>
               <FormButton content='Submit' value='Submit' color="blue"/>
@@ -108,7 +116,7 @@ class RatingMov extends React.Component {
 RatingMov.propTypes = {
   match: PropTypes.shape({
     params: PropTypes.shape({
-      movie: PropTypes.string.isRequired,
+      movie: PropTypes.string,
       _id: PropTypes.string,
     }),
   }),
