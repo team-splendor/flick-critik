@@ -76,7 +76,7 @@ class RatingMov extends React.Component {
             <Grid>
               <GridRow centered>
                 <Icon name="thumbs up outline" color="green" size="big"/>
-                <Icon name="thumbs down outline" color="green" size="big"/>
+                <Icon name="thumbs down outline" color="red" size="big"/>
               </GridRow>
             </Grid>
             <br/>

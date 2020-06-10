@@ -16,7 +16,7 @@ class StuffItemAdmin extends React.Component {
   onClick() {
     swal({
       title: 'Are you sure?',
-      text: 'Once deleted, User will not be in Flick-Critik.',
+      text: 'Once deleted, User will not be in Flick Critik.',
       icon: 'warning',
       buttons: true,
       dangerMode: true,
