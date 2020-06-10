@@ -3,8 +3,9 @@ import { Meteor } from 'meteor/meteor';
 import { Container, Table, Header, Loader } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
-import { Stuffs } from '../../api/stuff/Stuff';
+import { Ratings } from '/imports/api/rating/rating';
 import StuffItemAdmin from '../components/StuffItemAdmin';
+import RatingsAdmin from '../components/RatingsAdmin';
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
 class ListStuffAdmin extends React.Component {
@@ -17,8 +18,10 @@ class ListStuffAdmin extends React.Component {
   /** Render the page once subscriptions have been received. */
   renderPage() {
     return (
+
         <Container>
-          <Header as="h2" textAlign="center">Admin</Header>
+          <Header as="h1" textAlign="center">Admin</Header>
+          <Header as="h2" textAlign="center">Users</Header>
           <Table celled>
             <Table.Header>
               <Table.Row>
@@ -28,6 +31,21 @@ class ListStuffAdmin extends React.Component {
             </Table.Header>
             <Table.Body>
               {this.props.users.map((user) => <StuffItemAdmin key={user._id} currentUser={user} />)}
+            </Table.Body>
+          </Table>
+
+          <Header as="h2" textAlign="center">Ratings</Header>
+          <Table celled>
+            <Table.Header>
+              <Table.Row>
+                <Table.HeaderCell>Username</Table.HeaderCell>
+                <Table.HeaderCell>Movie</Table.HeaderCell>
+                <Table.HeaderCell>Rating</Table.HeaderCell>
+                <Table.HeaderCell>Comment</Table.HeaderCell>
+              </Table.Row>
+            </Table.Header>
+            <Table.Body>
+              {this.props.ratings.map((rating) => <RatingsAdmin key={rating._id} currentRating={rating} />)}
             </Table.Body>
           </Table>
         </Container>
@@ -55,16 +73,19 @@ class ListStuffAdmin extends React.Component {
 ListStuffAdmin.propTypes = {
   // stuffs: PropTypes.array.isRequired,
   users: PropTypes.array.isRequired,
-  ready: PropTypes.bool.isRequired,
+  ratings: PropTypes.array.isRequired,
+  ready: PropTypes.bool,
 };
 
 /** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
 export default withTracker(() => {
   // Get access to Stuff documents.
   const subscription = Meteor.subscribe('userList');
+  const subscription2 = Meteor.subscribe('AllRatings');
   return {
     //stuffs: Stuffs.find({}).fetch(),
     users: Meteor.users.find({}, { fields: { username: 1, profile: 1 } }).fetch(),
-    ready: subscription.ready(),
+    ratings: Ratings.find({}).fetch(),
+    ready: subscription.ready() && subscription2.ready(),
   };
 })(ListStuffAdmin);
