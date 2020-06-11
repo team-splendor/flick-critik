@@ -12,8 +12,6 @@ const movie3 = 'https://resizing.flixster.com/OkaFJTHmUcCq-43epY8F6e_spfE=/206x3
 // eslint-disable-next-line max-len
 const movie4 = 'https://resizing.flixster.com/TVYw1JwqJOlkRfa2wxW8v2gkz5w=/206x305/v1.bTsxMzI1MzQ4MDtqOzE4NDY4OzEyMDA7MjAyNTszMDAw';
 
-console.log(this.props);
-
 /** A simple static component to render some text for the landing page. */
 class ListMovies extends React.Component {
 

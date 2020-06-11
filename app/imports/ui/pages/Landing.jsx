@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Modal, Image, Button, Header, Icon} from 'semantic-ui-react';
+import { Grid, Modal, Image, Button, Header, Icon } from 'semantic-ui-react';
 
 /** A simple static component to render some text for the landing page. */
 class Landing extends React.Component {
@@ -15,7 +15,7 @@ class Landing extends React.Component {
               <Modal trigger={
                 <Button color='violet' animated='fade' size='mini'>
                   <Button.Content visible>
-                    <Icon name='id card' color='white' size='big'/>
+                    <Icon name='id card' size='big'/>
                     What is Flick-Critik?
                   </Button.Content>
                   <Button.Content hidden >Click to learn about Flick-Critik</Button.Content>

@@ -11,7 +11,7 @@ class NavBar extends React.Component {
   render() {
     return (
         /* <div className='menu'> */
-        <Menu borderless attached="left">
+        <Menu borderless>
           <Menu.Item as={NavLink} activeClassName="" exact to="/">
             <Button color='green' size='mini'>
               <Button.Content>

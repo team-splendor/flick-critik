@@ -1,6 +1,7 @@
 import React from 'react';
 import { Ratings } from '/imports/api/rating/rating';
-import { Bert } from 'meteor/themeteorchef:bert';
+// import { Bert } from 'meteor/themeteorchef:bert';
+import swal from '@sweetalert/with-react';
 import {
   Grid,
   Header,
@@ -11,7 +12,7 @@ import {
   HeaderContent,
   Icon,
   GridRow,
-  Input, TextArea,
+  TextArea, Dropdown,
 } from 'semantic-ui-react';
 import { Meteor } from 'meteor/meteor';
 import PropTypes from 'prop-types';
@@ -31,12 +32,24 @@ class RatingMov extends React.Component {
   /** Notify the user of the results of the submit. If successful, clear the form. */
   insertCallback(error) {
     if (error) {
-      Bert.alert({ type: 'danger', message: `Rating failed: ${error.message}` });
+      swal({
+        title: 'Rating failed!',
+        text: 'There was an error with your rating!',
+        icon: 'error',
+      });
+      // Bert.alert({ type: 'danger', message: `Rating failed: ${error.message}` });
     } else {
-      Bert.alert({ type: 'success', message: 'Rating succeeded' });
-      window.setTimeout(function () {
+      swal({
+        title: 'Rating succeeded!',
+        text: 'Your rating was successfully input!',
+        icon: 'success',
+      }).then(function () {
         window.location.href = '/';
-      }, 1000);
+      });
+      // Bert.alert({ type: 'success', message: 'Rating succeeded' });
+    //   window.setTimeout(function () {
+    //     window.location.href = '/';
+    //   }, 1000);
     }
   }
 
@@ -44,15 +57,15 @@ class RatingMov extends React.Component {
   submit() {
     const user = Meteor.user().username;
     const movie = this.state.movie;
-    if (this.state === null) {
-      Bert.alert({ type: 'danger', message: 'Please enter a rating for this movie.' });
-    }
+    // if (this.state === null) {
+    //   swal({
+    //     title: 'No rating!',
+    //     text: 'Please enter a rating for your review!',
+    //     icon: 'error',
+    //   });
+    // }
     const rating = this.state.rating;
     const comment = this.state.comment;
-    console.log(user);
-    console.log(movie);
-    console.log(rating);
-    console.log(comment);
     Ratings.insert({ user, movie, rating, comment }, this.insertCallback);
   }
 
@@ -64,9 +77,37 @@ class RatingMov extends React.Component {
     this.setState({ [name]: value });
   }
 
+  // handleDropChange = (event, data) => {
+  //   this.setState({
+  //     [data.name]: data.value,
+  //   });
+  // };
+
   /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
   render() {
-    // const mov = this.props.match.params.movie;
+    const movOpt = [
+      {
+        key: 'Uncut Gems',
+        text: 'Uncut Gems',
+        value: 'Uncut Gems',
+      },
+      {
+        key: 'The Grey Fox',
+        text: 'The Grey Fox',
+        value: 'The Grey Fox',
+      },
+      {
+        key: 'The Vast of Night',
+        text: 'The Vast of Night',
+        value: 'The Vast of Night',
+      },
+      {
+        key: 'Judy Punch',
+        text: 'Judy Punch',
+        value: 'Judy Punch',
+      },
+    ];
+
     return (
         <Grid container centered>
           <Grid.Column>
@@ -86,7 +127,12 @@ class RatingMov extends React.Component {
                 <HeaderContent>Movie:</HeaderContent>
               </Header>
               <FormInput required>
-                <Input name="movie" onChange={this.handleChange}></Input>
+                <Dropdown name='movie' onChange={this.handleChange}
+                    placeholder='Select a Movie'
+                    fluid
+                    selection
+                    options={movOpt}
+                />
               </FormInput>
               <Header as="h3" >
                 <Icon name="star" color="yellow"/>

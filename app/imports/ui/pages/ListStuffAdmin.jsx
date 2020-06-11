@@ -83,7 +83,7 @@ export default withTracker(() => {
   const subscription = Meteor.subscribe('userList');
   const subscription2 = Meteor.subscribe('AllRatings');
   return {
-    //stuffs: Stuffs.find({}).fetch(),
+    // stuffs: Stuffs.find({}).fetch(),
     users: Meteor.users.find({}, { fields: { username: 1, profile: 1 } }).fetch(),
     ratings: Ratings.find({}).fetch(),
     ready: subscription.ready() && subscription2.ready(),

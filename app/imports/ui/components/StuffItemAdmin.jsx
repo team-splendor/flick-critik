@@ -67,7 +67,7 @@ class StuffItemAdmin extends React.Component {
 
 /** Require a document to be passed to this component. */
 StuffItemAdmin.propTypes = {
-  //stuff: PropTypes.object.isRequired,
+  // stuff: PropTypes.object.isRequired,
   currentUser: PropTypes.object,
 };
 
