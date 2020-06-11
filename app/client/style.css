@@ -3,9 +3,9 @@
   position: fixed;
   min-width: 100%;
   min-height: 100%;
-  outline-style: double;
-  outline-width: 10px;
-  outline-color: green;
+  /*outline-style: double;*/
+  /*outline-width: 10px;*/
+  /*outline-color: green;*/
   border: 10px solid;
   border-image-source: url("/images/border.jpg");
   border-image-width: 0 0 10 0;

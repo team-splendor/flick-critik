@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
 import { withRouter, NavLink } from 'react-router-dom';
-import { Menu, Dropdown, Icon, Button } from 'semantic-ui-react';
+import { Menu, Dropdown, Icon } from 'semantic-ui-react';
 import { Roles } from 'meteor/alanning:roles';
 
 /** The NavBar appears at the top of every page. Rendered by the App Layout component. */
@@ -11,13 +11,9 @@ class NavBar extends React.Component {
   render() {
     return (
         /* <div className='menu'> */
-        <Menu borderless>
+        <Menu>
           <Menu.Item as={NavLink} activeClassName="" exact to="/">
-            <Button color='green' size='mini'>
-              <Button.Content>
-                <Icon name='home' color='black' size='big'/>Home
-              </Button.Content>
-            </Button>
+            <Icon name='home' color='black' size='big'/>Home
           </Menu.Item>
           {this.props.currentUser ? (
           [<Menu.Item as={NavLink} activeClassName="active" exact to="/list" key='list'>View Movies</Menu.Item>]
@@ -26,36 +22,20 @@ class NavBar extends React.Component {
           <Menu.Item as={NavLink} activeClassName="active" exact to="/admin" key='admin'>Admin</Menu.Item>
           ) : ''}
           <Menu.Item position="right">
-            <Button color='purple' size='mini'>
-              <Button.Content>
                 {this.props.currentUser === '' ? (
                 <Dropdown text="Login" pointing="top right" icon={'user outline'}>
                   <Dropdown.Menu>
-                    <Button color='teal' size='mini'>
-                      <Button.Content>
-                        <Dropdown.Item icon="sign in" text="Sign In" as={NavLink} exact to="/signin"/>
-                      </Button.Content>
-                    </Button>
-                    <Button color='olive' size='mini'>
-                      <Button.Content>
-                        <Dropdown.Item icon="add user" text="Sign Up" as={NavLink} exact to="/signup"/>
-                      </Button.Content>
-                    </Button>
+                    <Dropdown.Item icon="sign in" text="Sign In" as={NavLink} exact to="/signin"/>
+                    <Dropdown.Item icon="add user" text="Sign Up" as={NavLink} exact to="/signup"/>
                   </Dropdown.Menu>
                 </Dropdown>
             ) : (
                 <Dropdown text={this.props.currentUser} pointing="top right" icon={'user'}>
                   <Dropdown.Menu>
-                    <Button color='grey' size='mini'>
-                      <Button.Content>
                     <Dropdown.Item icon="sign out" text="Sign Out" as={NavLink} exact to="/signout"/>
-                      </Button.Content>
-                    </Button>
                   </Dropdown.Menu>
                 </Dropdown>
             )}
-              </Button.Content>
-            </Button>
           </Menu.Item>
         </Menu>
     );

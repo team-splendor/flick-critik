@@ -1,8 +1,8 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Table } from 'semantic-ui-react';
+import { Table, Button } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
-import { withRouter, Link } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import swal from '@sweetalert/with-react';
 
 
@@ -53,7 +53,7 @@ class StuffItemAdmin extends React.Component {
     return (
         <Table.Row>
           <Table.Cell>{this.props.currentUser.username}</Table.Cell>
-          <Table.Cell ><Link color='red' onClick={this.onClick}>Remove</Link></Table.Cell>
+          <Table.Cell ><Button fluid color='red' onClick={this.onClick}>Delete</Button></Table.Cell>
         </Table.Row>
         // <Table.Row>
         //   <Table.Cell>{this.props.stuff.name}</Table.Cell>
