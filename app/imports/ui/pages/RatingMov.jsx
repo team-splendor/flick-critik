@@ -144,10 +144,10 @@ class RatingMov extends React.Component {
               </FormInput>
               <Header as="h3" >
                 <Icon name="comments outline" color="black"/>
-                <HeaderContent>Comments:</HeaderContent>
+                <HeaderContent>Comments: (Maximum Characters: 50)</HeaderContent>
               </Header>
               <FormInput required>
-                <TextArea name="comment" onChange={this.handleChange}></TextArea>
+                <TextArea maxlength="50" name="comment" onChange={this.handleChange}></TextArea>
               </FormInput>
               <br/>
               <FormButton content='Submit' value='Submit' color="blue"/>
