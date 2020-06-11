@@ -15,10 +15,6 @@ const movie4 = 'https://resizing.flixster.com/TVYw1JwqJOlkRfa2wxW8v2gkz5w=/206x3
 /** A simple static component to render some text for the landing page. */
 class ListMovies extends React.Component {
 
-  handleClick() {
-    browserHistory.push('/add');
-  }
-
   render() {
     return (
 
@@ -31,8 +27,11 @@ class ListMovies extends React.Component {
 
             <span>Uncut Gems</span>
 
+            <Link to={'/movie1'}>
+              <Button>Check Reviews</Button></Link>
+
             <Link to={'/rating'}>
-              <Button onClick={this.handleClick}>Review</Button></Link>
+              <Button>Review</Button></Link>
 
 
           </Container>
@@ -45,8 +44,11 @@ class ListMovies extends React.Component {
 
             <span>The Grey Fox</span>
 
+            <Link to={'/movie2'}>
+              <Button>Check Reviews</Button></Link>
+
             <Link to={'/rating'}>
-              <Button onClick={this.handleClick}>Review</Button></Link>
+              <Button>Review</Button></Link>
 
           </Container>
 
@@ -58,8 +60,11 @@ class ListMovies extends React.Component {
 
             <span>The Vast of Night</span>
 
+            <Link to={'/movie3'}>
+              <Button>Check Reviews</Button></Link>
+
             <Link to={'/rating'}>
-              <Button onClick={this.handleClick}>Review</Button></Link>
+              <Button>Review</Button></Link>
 
           </Container>
 
@@ -71,8 +76,11 @@ class ListMovies extends React.Component {
 
             <span>Judy Punch</span>
 
+            <Link to={'/movie4'}>
+              <Button>Check Reviews</Button></Link>
+
             <Link to={'/rating'}>
-              <Button onClick={this.handleClick}>Review</Button></Link>
+              <Button>Review</Button></Link>
 
           </Container>
         </div>
