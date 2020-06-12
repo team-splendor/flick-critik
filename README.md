@@ -81,7 +81,11 @@ To do:
 https://github.com/team-splendor/flick-critik
 
 ## Pending
-- home page content 
+
+- add description and functionality of site on home page
+- develop ui for rating form
+- develop ui for view movies page
+- develop ui for view ratings for specific movies
 
 ## Roles and Responsibilities
 
