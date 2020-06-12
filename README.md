@@ -72,24 +72,40 @@ To do:
 - basic admin page
 - basic sign in / sign up page
 - basic UI for rating form
-- home page
+- home page design
 - link button on review page to let user create a review
 - nav bar / menu
 - rating Schema
 
 ## Link
+https://github.com/team-splendor/flick-critik
 
 ## Pending
+- home page content 
 
 ## Roles and Responsibilities
 
 ### Derrick
 
+#### New Completions
+#### Current
+#### Next
+
 ### Eddie
+
+#### New Completions
+#### Current
+#### Next
 
 ### Haochen
 
+#### New Completions
+#### Current
+#### Next
+
 ### Micah
 
-
+#### New Completions
+#### Current
+#### Next
 
