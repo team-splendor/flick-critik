@@ -42,6 +42,7 @@ class ListStuffAdmin extends React.Component {
                 <Table.HeaderCell>Movie</Table.HeaderCell>
                 <Table.HeaderCell>Rating</Table.HeaderCell>
                 <Table.HeaderCell>Comment</Table.HeaderCell>
+                <Table.HeaderCell>Remove A Rating</Table.HeaderCell>
               </Table.Row>
             </Table.Header>
             <Table.Body>
