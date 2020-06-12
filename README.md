@@ -77,5 +77,19 @@ To do:
 - nav bar / menu
 - rating Schema
 
+## Link
+
 ## Pending
+
+## Roles and Responsibilities
+
+### Derrick
+
+### Eddie
+
+### Haochen
+
+### Micah
+
+
 
