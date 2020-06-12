@@ -1,4 +1,5 @@
 # ICS 427 Flick Critik
+# Week: 05/31/2020 - 06/07/2020
 
 ## Progress
 - added in add review page
