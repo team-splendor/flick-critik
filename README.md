@@ -59,7 +59,7 @@ To do:
 - finish up landing page
 - navbar / menu
 
-Week: 06/07/2020 - 06/14/2020
+## Week: 06/07/2020 - 06/14/2020
 
 ## Progress
 - added in add review page
