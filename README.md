@@ -1,7 +1,8 @@
 # ICS 427 Flick Critik
-# Week: 05/31/2020 - 06/07/2020
 
-## Progress
+## Week: 05/31/2020 - 06/06/2020
+
+### Progress
 - added in add review page
 - added in view movies page
 - basic admin page
@@ -9,7 +10,7 @@
 - basic UI for rating form
 - rating Schema
 
-## Pending
+### Pending
 - allow admin to delete rating
 - allow admin to remove an account
 - allow admin to view all accounts
@@ -19,9 +20,9 @@
 - nav bar / menu
 - back end of ratings
 
-## Assignments:
+### Assignments:
 
-### Derrick:
+#### Derrick:
 
 Accomplished so far:
 - Rating Schema
