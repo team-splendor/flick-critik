@@ -104,7 +104,11 @@ https://github.com/team-splendor/flick-critik
 ### Haochen
 
 #### New Completions
+- home page design
+- nav bar/ menu
+
 #### Current
+- add description and functionality of site on home page
 #### Next
 
 ### Micah
