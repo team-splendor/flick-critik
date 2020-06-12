@@ -59,7 +59,7 @@ To do:
 - finish up landing page
 - navbar / menu
 
-## Week: 06/07/2020 - 06/14/2020
+# Week: 06/07/2020 - 06/14/2020
 
 ## Progress
 - added in add review page
@@ -68,6 +68,7 @@ To do:
 - allow admin to remove an account
 - allow admin to view all accounts
 - allow users to view ratings / movies
+- back end of ratings
 - basic admin page
 - basic sign in / sign up page
 - basic UI for rating form
@@ -77,4 +78,4 @@ To do:
 - rating Schema
 
 ## Pending
-- back end of ratings
+
