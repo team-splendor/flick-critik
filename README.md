@@ -1,22 +1,21 @@
 # ICS 427 Flick Critik
-Week: 06/07/2020 - 06/14/2020
 
 ## Progress
 - added in add review page
 - added in view movies page
+- basic admin page
+- basic sign in / sign up page
+- basic UI for rating form
+- rating Schema
+
+## Pending
 - allow admin to delete rating
 - allow admin to remove an account
 - allow admin to view all accounts
 - allow users to view ratings / movies
-- basic admin page
-- basic sign in / sign up page
-- basic UI for rating form
 - home page
 - link button on review page to let user create a review
 - nav bar / menu
-- rating Schema
-
-## Pending
 - back end of ratings
 
 ## Assignments:
@@ -60,3 +59,22 @@ To do:
 - finish up landing page
 - navbar / menu
 
+Week: 06/07/2020 - 06/14/2020
+
+## Progress
+- added in add review page
+- added in view movies page
+- allow admin to delete rating
+- allow admin to remove an account
+- allow admin to view all accounts
+- allow users to view ratings / movies
+- basic admin page
+- basic sign in / sign up page
+- basic UI for rating form
+- home page
+- link button on review page to let user create a review
+- nav bar / menu
+- rating Schema
+
+## Pending
+- back end of ratings
