@@ -62,20 +62,14 @@ To do:
 # Week: 06/07/2020 - 06/14/2020
 
 ## Progress
-- added in add review page
-- added in view movies page
 - allow admin to delete rating
 - allow admin to remove an account
 - allow admin to view all accounts
 - allow users to view ratings / movies
 - back end of ratings
-- basic admin page
-- basic sign in / sign up page
-- basic UI for rating form
 - home page design
 - link button on review page to let user create a review
 - nav bar / menu
-- rating Schema
 
 ## Link
 https://github.com/team-splendor/flick-critik
@@ -83,36 +77,37 @@ https://github.com/team-splendor/flick-critik
 ## Pending
 
 - add description and functionality of site on home page
-- develop ui for rating form
+- fix up ui for rating form
 - develop ui for view movies page
-- develop ui for view ratings for specific movies
+- develop ui for view ratings for specific movies page
 
 ## Roles and Responsibilities
 
 ### Derrick
 
 #### New Completions
-- add review page
+- linked button on review page to let user create a review (w/ Eddie)
 - back end of ratings
 
 #### Current
-- ratings form
+- fixing up ui for ratings form
 
 #### Next
-- back end of reviews
+- add in UI for other pages
 
 ### Eddie
 
 #### New Completions
 - sign in/sign up/sign out page
 - admin functionality with relations to Accounts and Ratings
-- linked button on review page to let user create a review
+- linked button on review page to let user create a review (w/ Derrick)
 
 #### Current
--
+- ui of sign in / sign up page
 
 #### Next
--
+- add more for ui of view ratings for specific movies page
+- possibly add more admin features
 
 ### Haochen
 
@@ -129,11 +124,11 @@ https://github.com/team-splendor/flick-critik
 ### Micah
 
 #### New Completions
-- view movies page layout
-
-#### Current
 - view movies page functionality
 
+#### Current
+- view movies page layout
+
 #### Next
-- view ratings/review page functonality
+- develop more ui for view movies page
 
