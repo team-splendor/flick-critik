@@ -105,7 +105,8 @@ https://github.com/team-splendor/flick-critik
 
 #### New Completions
 - sign in/sign up/sign out page
-- admin functionality
+- admin functionality with relations to Accounts and Ratings
+- linked button on review page to let user create a review
 
 #### Current
 -
