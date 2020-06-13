@@ -17,70 +17,68 @@ class ListMovies extends React.Component {
 
   render() {
     return (
+        <div align="middle">
 
-        <div align="left">
           <Header as="h2" textAlign="center">View Movies</Header>
+
+          <Link to={'/rating'}>
+            <Button>Add a Review</Button>
+          </Link>
+
+          <Divider/>
 
           <Container>
 
             <Image src={movie1} size='medium' verticalAlign='top' />
 
-            <span>Uncut Gems</span>
+            <Divider hidden />
 
             <Link to={'/movie1'}>
-              <Button>Check Reviews</Button></Link>
-
-            <Link to={'/rating'}>
-              <Button>Review</Button></Link>
-
+              <Button>Check Reviews for Uncut Gems</Button></Link>
 
           </Container>
 
-          <Divider hidden />
+          <Divider/>
 
           <Container>
 
             <Image src={movie2} size='medium' verticalAlign='top' />
 
-            <span>The Grey Fox</span>
+            <Divider hidden />
 
             <Link to={'/movie2'}>
-              <Button>Check Reviews</Button></Link>
-
-            <Link to={'/rating'}>
-              <Button>Review</Button></Link>
+              <Button>Check Reviews for The Grey Fox</Button>
+            </Link>
 
           </Container>
 
-          <Divider hidden />
+          <Divider/>
 
           <Container>
 
             <Image src={movie3} size='medium' verticalAlign='top' />
 
-            <span>The Vast of Night</span>
+            <Divider hidden />
 
             <Link to={'/movie3'}>
-              <Button>Check Reviews</Button></Link>
-
-            <Link to={'/rating'}>
-              <Button>Review</Button></Link>
+              <Button>Check Reviews for The Vast of Night</Button>
+            </Link>
 
           </Container>
 
-          <Divider hidden />
+          <Divider/>
 
           <Container>
 
             <Image src={movie4} size='medium' verticalAlign='top' />
 
-            <span>Judy Punch</span>
+            <Divider hidden />
 
             <Link to={'/movie4'}>
-              <Button>Check Reviews</Button></Link>
+              <Button>Check Reviews for Judy Punch</Button>
+            </Link>
 
-            <Link to={'/rating'}>
-              <Button>Review</Button></Link>
+            <Divider hidden />
 
           </Container>
         </div>
