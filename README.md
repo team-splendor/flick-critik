@@ -92,14 +92,26 @@ https://github.com/team-splendor/flick-critik
 ### Derrick
 
 #### New Completions
+- add review page
+- back end of ratings
+
 #### Current
+- ratings form
+
 #### Next
+- back end of reviews
 
 ### Eddie
 
 #### New Completions
+- sign in/sign up/sign out page
+- admin functionality
+
 #### Current
+-
+
 #### Next
+-
 
 ### Haochen
 
@@ -109,11 +121,18 @@ https://github.com/team-splendor/flick-critik
 
 #### Current
 - add description and functionality of site on home page
+
 #### Next
+- design of other pages
 
 ### Micah
 
 #### New Completions
+- view movies page layout
+
 #### Current
+- view movies page functionality
+
 #### Next
+- view ratings/review page functonality
 
