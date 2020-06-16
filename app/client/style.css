@@ -11,8 +11,8 @@
   outline-color: green;
   border: 10px solid;
   border-image-source: url("/images/border.jpg");
-  border-image-width: 0 0 10 0;
-  border-image-slice: 0 0 100% 0;
+  border-image-width: 2 0 10 0;
+  border-image-slice: 20% 0 100% 0;
   border-image-repeat: round round;
   color: white;
   font-family: monospace;

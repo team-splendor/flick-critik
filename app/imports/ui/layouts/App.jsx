@@ -6,10 +6,19 @@ import { Roles } from 'meteor/alanning:roles';
 import { HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import NavBar from '../components/NavBar';
 import Landing from '../pages/Landing';
+import ListMovies from '../pages/ListMovies';
+import ListStuffAdmin from '../pages/ListStuffAdmin';
+import AddStuff from '../pages/AddStuff';
+import EditStuff from '../pages/EditStuff';
 import NotFound from '../pages/NotFound';
 import Signin from '../pages/Signin';
 import Signup from '../pages/Signup';
 import Signout from '../pages/Signout';
+import RatingMov from '../pages/RatingMov';
+import Movie1 from '../pages/Movie1';
+import Movie2 from '../pages/Movie2';
+import Movie3 from '../pages/Movie3';
+import Movie4 from '../pages/Movie4';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 class App extends React.Component {
@@ -22,6 +31,13 @@ class App extends React.Component {
               <Route exact path="/" component={Landing}/>
               <Route path="/signin" component={Signin}/>
               <Route path="/signup" component={Signup}/>
+              <ProtectedRoute path="/list" component={ListMovies}/>
+              <ProtectedRoute path="/rating" component={RatingMov}/>
+              <ProtectedRoute path="/movie1" component={Movie1}/>
+              <ProtectedRoute path="/movie2" component={Movie2}/>
+              <ProtectedRoute path="/movie3" component={Movie3}/>
+              <ProtectedRoute path="/movie4" component={Movie4}/>
+              <AdminProtectedRoute path="/admin" component={ListStuffAdmin}/>
               <ProtectedRoute path="/signout" component={Signout}/>
               <Route component={NotFound}/>
             </Switch>
