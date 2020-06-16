@@ -1,8 +1,11 @@
 .background {
   background-color: black;
-  position: fixed;
+  background-image: url('/images/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   min-width: 100%;
   min-height: 100%;
+  position: fixed;
   outline-style: double;
   outline-width: 10px;
   outline-color: green;

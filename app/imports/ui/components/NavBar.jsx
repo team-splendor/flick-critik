@@ -10,30 +10,22 @@ class NavBar extends React.Component {
   render() {
     return (
         /* <div className='menu'> */
-        <Menu borderless attached="left">
+        <Menu borderless>
           <Menu.Item as={NavLink} activeClassName="" exact to="/">
-            <Button color='green' size='mini'>
+            <Button color='green'  circular compact size='mini'>
               <Button.Content>
                 <Icon name='home' color='black' size='big'/>Home
               </Button.Content>
             </Button>
           </Menu.Item>
           <Menu.Item position="right">
-            <Button color='purple' size='mini'>
+            <Button color='pink' circular compact size='mini'>
               <Button.Content>
                 {this.props.currentUser === '' ? (
                 <Dropdown text="Login" pointing="top right" icon={'user outline'}>
                   <Dropdown.Menu>
-                    <Button color='teal' size='mini'>
-                      <Button.Content>
-                        <Dropdown.Item icon="sign in" text="Sign In" as={NavLink} exact to="/signin"/>
-                      </Button.Content>
-                    </Button>
-                    <Button color='olive' size='mini'>
-                      <Button.Content>
-                        <Dropdown.Item icon="add user" text="Sign Up" as={NavLink} exact to="/signup"/>
-                      </Button.Content>
-                    </Button>
+                    <Dropdown.Item icon="sign in" text="Sign In" as={NavLink} exact to="/signin"/>
+                    <Dropdown.Item icon="add user" text="Sign Up" as={NavLink} exact to="/signup"/>
                   </Dropdown.Menu>
                 </Dropdown>
             ) : (
@@ -41,7 +33,7 @@ class NavBar extends React.Component {
                   <Dropdown.Menu>
                     <Button color='grey' size='mini'>
                       <Button.Content>
-                    <Dropdown.Item icon="sign out" text="Sign Out" as={NavLink} exact to="/signout"/>
+                        <Dropdown.Item icon="sign out" text="Sign Out" as={NavLink} exact to="/signout"/>
                       </Button.Content>
                     </Button>
                   </Dropdown.Menu>

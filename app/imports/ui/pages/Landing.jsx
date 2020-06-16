@@ -13,9 +13,9 @@ class Landing extends React.Component {
             </Grid.Row>
             <Grid.Row centered>
               <Modal trigger={
-                <Button color='violet' animated='fade' size='mini'>
+                <Button color='purple' animated='fade' size='mini'>
                   <Button.Content visible>
-                    <Icon name='id card' color='white' size='big'/>
+                    <Icon name='id card' inverted size='big'/>
                     What is Flick-Critik?
                   </Button.Content>
                   <Button.Content hidden >Click to learn about Flick-Critik</Button.Content>
