@@ -109,7 +109,7 @@ class RatingMov extends React.Component {
     ];
 
     return (
-        <Grid container centered>
+        <Grid className='maingrid' container centered>
           <Grid.Column>
             <Header as="h2" textAlign="center">
               <HeaderContent>Flick Critik</HeaderContent>
@@ -147,7 +147,7 @@ class RatingMov extends React.Component {
                 <HeaderContent>Comments: (Maximum Characters: 50)</HeaderContent>
               </Header>
               <FormInput required>
-                <TextArea maxlength="50" name="comment" onChange={this.handleChange}></TextArea>
+                <TextArea maxLength="50" name="comment" onChange={this.handleChange}></TextArea>
               </FormInput>
               <br/>
               <FormButton content='Submit' value='Submit' color="blue"/>

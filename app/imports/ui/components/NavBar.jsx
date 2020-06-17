@@ -13,17 +13,29 @@ class NavBar extends React.Component {
         /* <div className='menu'> */
         <Menu borderless>
           <Menu.Item as={NavLink} activeClassName="" exact to="/">
-            <Button color='green'  circular compact size='mini'>
+            <Button color='green' circular compact size='mini'>
               <Button.Content>
                 <Icon name='home' color='black' size='big'/>Home
               </Button.Content>
             </Button>
           </Menu.Item>
           {this.props.currentUser ? (
-          [<Menu.Item as={NavLink} activeClassName="active" exact to="/list" key='list'>View Movies</Menu.Item>]
+          [<Menu.Item as={NavLink} activeClassName="active" exact to="/list" key='list'>
+            <Button color='blue' circular compact size='mini'>
+              <Button.Content>
+                View Movies
+              </Button.Content>
+            </Button>
+          </Menu.Item>]
           ) : ''}
           {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
-          <Menu.Item as={NavLink} activeClassName="active" exact to="/admin" key='admin'>Admin</Menu.Item>
+          <Menu.Item as={NavLink} activeClassName="active" exact to="/admin" key='admin'>
+            <Button color='red' circular compact size='mini'>
+            <Button.Content>
+              Admin
+            </Button.Content>
+          </Button>
+          </Menu.Item>
           ) : ''}
           <Menu.Item position="right">
             <Button color='pink' circular compact size='mini'>
@@ -38,11 +50,7 @@ class NavBar extends React.Component {
             ) : (
                 <Dropdown text={this.props.currentUser} pointing="top right" icon={'user'}>
                   <Dropdown.Menu>
-                    <Button color='grey' size='mini'>
-                      <Button.Content>
-                        <Dropdown.Item icon="sign out" text="Sign Out" as={NavLink} exact to="/signout"/>
-                      </Button.Content>
-                    </Button>
+                    <Dropdown.Item icon="sign out" text="Sign Out" as={NavLink} exact to="/signout"/>
                   </Dropdown.Menu>
                 </Dropdown>
             )}
