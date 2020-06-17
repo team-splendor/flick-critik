@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
 import { withRouter, NavLink } from 'react-router-dom';
-import { Menu, Dropdown, Icon, Button } from 'semantic-ui-react';
+import { Menu, Dropdown, Icon } from 'semantic-ui-react';
 import { Roles } from 'meteor/alanning:roles';
 
 /** The NavBar appears at the top of every page. Rendered by the App Layout component. */
@@ -13,34 +13,20 @@ class NavBar extends React.Component {
         /* <div className='menu'> */
         <Menu borderless>
           <Menu.Item as={NavLink} activeClassName="" exact to="/">
-            <Button color='green' circular compact size='mini'>
-              <Button.Content>
-                <Icon name='home' color='black' size='big'/>Home
-              </Button.Content>
-            </Button>
+            <Icon name='home' color='black' size='big'/>Home
           </Menu.Item>
           {this.props.currentUser ? (
           [<Menu.Item as={NavLink} activeClassName="active" exact to="/list" key='list'>
-            <Button color='blue' circular compact size='mini'>
-              <Button.Content>
-                View Movies
-              </Button.Content>
-            </Button>
+            View Movies
           </Menu.Item>]
           ) : ''}
           {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
           <Menu.Item as={NavLink} activeClassName="active" exact to="/admin" key='admin'>
-            <Button color='red' circular compact size='mini'>
-            <Button.Content>
-              Admin
-            </Button.Content>
-          </Button>
+            Admin
           </Menu.Item>
           ) : ''}
           <Menu.Item position="right">
-            <Button color='pink' circular compact size='mini'>
-              <Button.Content>
-                {this.props.currentUser === '' ? (
+            {this.props.currentUser === '' ? (
                 <Dropdown text="Login" pointing="top right" icon={'user outline'}>
                   <Dropdown.Menu>
                     <Dropdown.Item icon="sign in" text="Sign In" as={NavLink} exact to="/signin"/>
@@ -54,8 +40,6 @@ class NavBar extends React.Component {
                   </Dropdown.Menu>
                 </Dropdown>
             )}
-              </Button.Content>
-            </Button>
           </Menu.Item>
         </Menu>
     );
