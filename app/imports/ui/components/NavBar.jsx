@@ -10,14 +10,13 @@ import { Roles } from 'meteor/alanning:roles';
 class NavBar extends React.Component {
   render() {
     return (
-        /* <div className='menu'> */
-        <Menu borderless>
+        <Menu inverted>
           <Menu.Item as={NavLink} activeClassName="" exact to="/">
-            <Icon name='home' color='black' size='big'/>Home
+            <Icon name='home' size='big'/>Home
           </Menu.Item>
           {this.props.currentUser ? (
           [<Menu.Item as={NavLink} activeClassName="active" exact to="/list" key='list'>
-            View Movies
+            <Icon name='film' size='big'/>View Movies
           </Menu.Item>]
           ) : ''}
           {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
