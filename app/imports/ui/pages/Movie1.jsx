@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Container, Table, Header, Loader } from 'semantic-ui-react';
+import { Container, Table, Header, Loader, GridRow, Icon, Grid } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import { Ratings } from '/imports/api/rating/rating';
@@ -20,6 +20,11 @@ class Movie1 extends React.Component {
 
         <Container>
           <Header as="h1" textAlign="center">Uncut Gems</Header>
+          <Grid>
+              <GridRow centered>
+                <Icon name="film" size="big"/>
+              </GridRow>
+            </Grid>
 
           <Header as="h2" textAlign="center">Ratings</Header>
           <Table celled>

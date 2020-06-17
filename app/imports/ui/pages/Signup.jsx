@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link, Redirect } from 'react-router-dom';
-import { Container, Form, Grid, Header, Message, Segment } from 'semantic-ui-react';
+import { Container, Form, Grid, Header, Message, Segment, Icon, GridRow } from 'semantic-ui-react';
 import { Accounts } from 'meteor/accounts-base';
 
 /**
@@ -45,6 +45,11 @@ class Signup extends React.Component {
             <Header as="h2" textAlign="center">
               Register your account
             </Header>
+            <Grid>
+              <GridRow centered>
+                <Icon name="add user" size="big"/>
+              </GridRow>
+            </Grid>
             <Form onSubmit={this.submit}>
               <Segment stacked>
                 <Form.Input
