@@ -1,6 +1,5 @@
 import React from 'react';
-import { Image, Divider, Container, Header, Button } from 'semantic-ui-react';
-import { browserHistory } from 'react-router';
+import { Image, Divider, Container, Header, Button, Grid, GridColumn, Icon } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 
 // eslint-disable-next-line max-len
@@ -17,71 +16,62 @@ class ListMovies extends React.Component {
 
   render() {
     return (
-        <div align="middle">
-
+        <Grid centered>
+          <GridColumn verticalAlign='middle'>
           <Header as="h2" textAlign="center">View Movies</Header>
-
           <Link to={'/rating'}>
-            <Button>Add a Review</Button>
+            <Button color='blue'>
+              <Icon name='add' size='small'/>
+              Add a Review
+            </Button>
           </Link>
-
           <Divider/>
-
           <Container>
-
             <Image src={movie1} size='medium' verticalAlign='top' />
-
             <Divider hidden />
-
             <Link to={'/movie1'}>
-              <Button>Check Reviews for Uncut Gems</Button></Link>
-
+              <Button color='red'>
+                <Icon name='check' size='small'/>
+                Check Reviews for Uncut Gems
+              </Button>
+            </Link>
           </Container>
-
           <Divider/>
-
           <Container>
-
             <Image src={movie2} size='medium' verticalAlign='top' />
-
             <Divider hidden />
-
             <Link to={'/movie2'}>
-              <Button>Check Reviews for The Grey Fox</Button>
+              <Button color='red'>
+                <Icon name='check' size='small'/>
+                Check Reviews for The Grey Fox
+              </Button>
             </Link>
-
           </Container>
-
           <Divider/>
-
           <Container>
-
             <Image src={movie3} size='medium' verticalAlign='top' />
-
             <Divider hidden />
-
             <Link to={'/movie3'}>
-              <Button>Check Reviews for The Vast of Night</Button>
+              <Button color='red'>
+                <Icon name='check' size='small'/>
+                Check Reviews for The Vast of Night
+              </Button>
             </Link>
-
           </Container>
-
           <Divider/>
-
           <Container>
-
             <Image src={movie4} size='medium' verticalAlign='top' />
-
             <Divider hidden />
-
             <Link to={'/movie4'}>
-              <Button>Check Reviews for Judy Punch</Button>
+              <Button color='red'>
+                <Icon name='check' size='small'/>
+                Check Reviews for Judy Punch
+              </Button>
             </Link>
-
             <Divider hidden />
-
           </Container>
-        </div>
+          </GridColumn>
+        </Grid>
     );
   }
 }
