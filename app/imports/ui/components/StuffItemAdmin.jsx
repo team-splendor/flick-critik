@@ -55,19 +55,12 @@ class StuffItemAdmin extends React.Component {
           <Table.Cell>{this.props.currentUser.username}</Table.Cell>
           <Table.Cell ><Button fluid color='red' onClick={this.onClick}>Delete</Button></Table.Cell>
         </Table.Row>
-        // <Table.Row>
-        //   <Table.Cell>{this.props.stuff.name}</Table.Cell>
-        //   <Table.Cell>{this.props.stuff.quantity}</Table.Cell>
-        //   <Table.Cell>{this.props.stuff.condition}</Table.Cell>
-        //   <Table.Cell>{this.props.stuff.owner}</Table.Cell>
-        // </Table.Row>
     );
   }
 }
 
 /** Require a document to be passed to this component. */
 StuffItemAdmin.propTypes = {
-  // stuff: PropTypes.object.isRequired,
   currentUser: PropTypes.object,
 };
 

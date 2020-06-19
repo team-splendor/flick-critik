@@ -61,7 +61,6 @@ class ListStuffAdmin extends React.Component {
 
 /** Require an array of Stuff documents in the props. */
 ListStuffAdmin.propTypes = {
-  // stuffs: PropTypes.array.isRequired,
   users: PropTypes.array.isRequired,
   ratings: PropTypes.array.isRequired,
   ready: PropTypes.bool,
@@ -69,11 +68,9 @@ ListStuffAdmin.propTypes = {
 
 /** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
 export default withTracker(() => {
-  // Get access to Stuff documents.
   const subscription = Meteor.subscribe('userList');
   const subscription2 = Meteor.subscribe('AllRatings');
   return {
-    // stuffs: Stuffs.find({}).fetch(),
     users: Meteor.users.find({}, { fields: { username: 1, profile: 1 } }).fetch(),
     ratings: Ratings.find({}).fetch(),
     ready: subscription.ready() && subscription2.ready(),
