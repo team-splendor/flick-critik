@@ -135,14 +135,14 @@ https://github.com/team-splendor/flick-critik
 # Week: 06/15/2020 - 06/21/2020
 
 ## Progress
--finished home page
--finished nav bar/menu
--finished view movies page
--finished add review page
--finished movie review page
+- finished home page
+- finished nav bar/menu
+- finished view movies page
+- finished add review page
+- finished movie review page
 
 ## Pending
--augment the design of the app
+- augment the design of the app
 
 ## Roles and Responsibilities
 
