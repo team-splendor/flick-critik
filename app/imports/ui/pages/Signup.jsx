@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link, Redirect } from 'react-router-dom';
-import { Container, Form, Grid, Header, Message, Segment, Icon, GridRow } from 'semantic-ui-react';
+import { Container, Form, Grid, Header, Message, Segment, Icon, GridRow, Button } from 'semantic-ui-react';
 import { Accounts } from 'meteor/accounts-base';
 
 /**
@@ -31,9 +31,9 @@ class Signup extends React.Component {
     });
   }
 
-  /** Display the signup form. Redirect to add page after successful registration and login. */
+  /** Display the signup form. Redirect to home page after successful registration and login. */
   render() {
-    const { from } = this.props.location.state || { from: { pathname: '/add' } };
+    const { from } = this.props.location.state || { from: { pathname: '/' } };
     // if correct authentication, redirect to from: page instead of signup screen
     if (this.state.redirectToReferer) {
       return <Redirect to={from}/>;
@@ -70,7 +70,10 @@ class Signup extends React.Component {
                   type="password"
                   onChange={this.handleChange}
                 />
-                <Form.Button content="Submit"/>
+                <Button color='green'>
+                  <Icon name='upload'/>
+                  Submit
+                </Button>
               </Segment>
             </Form>
             <Message>
