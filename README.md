@@ -132,3 +132,55 @@ https://github.com/team-splendor/flick-critik
 #### Next
 - develop more ui for view movies page
 
+# Week: 06/15/2020 - 06/21/2020
+
+##Progress
+-finished home page
+-finished nav bar/menu
+-finished view movies page
+-finished add review page
+-finished movie review page
+
+##Pending
+-augment the design of the app
+
+## Roles and Responsibilities
+
+### Derrick
+
+#### New Completions
+- fixing up ui for ratings form
+
+#### Next
+- augment the design of add review page
+- augment the server side of app
+
+### Eddie
+
+#### New Completions
+- ui of sign in / sign up page
+- add more for ui of view ratings for specific movies page
+
+#### Next
+- possibly add more admin features
+- augment the server side of app
+
+### Haochen
+
+#### New Completions
+- add description and functionality of site on home page
+
+#### Next
+- augment design of other pages
+
+### Micah
+
+#### New Completions
+- view movies page layout
+
+#### Next
+- augment view movies page
+- augment movie review page
+
+## Link
+https://github.com/team-splendor/flick-critik
