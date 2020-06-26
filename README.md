@@ -237,6 +237,7 @@ https://github.com/team-splendor/flick-critik
 2) Download the release version from the link below.
 3) In the command prompt, change directory to the /app of the Flick Critik repo and run the command to install Meteor libraries: 'meteor npm install'.
 4) In the same directory, run the command to start the application: 'meteor npm run start'.
+Additional details are in the Wiki page [here](https://github.com/team-splendor/flick-critik/wiki/User-Guide)
 
 ## Final Thoughts
 
