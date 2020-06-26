@@ -182,7 +182,7 @@ https://github.com/team-splendor/flick-critik
 - augment view movies page
 - augment movie review page
 
-# Week: 06/12/2020 - 06/21/2020
+# Week: 06/22/2020 - 06/28/2020
 
 ## Progress
 - finished home page
