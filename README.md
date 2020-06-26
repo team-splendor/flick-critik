@@ -182,5 +182,67 @@ https://github.com/team-splendor/flick-critik
 - augment view movies page
 - augment movie review page
 
+# Week: 06/12/2020 - 06/21/2020
+
+## Progress
+- finished home page
+- finished nav bar/menu
+- finished view movies page
+- finished add review page
+- finished movie review page
+- augment the design of the app
+
+## Pending
+- further augment the design of the app
+
+## Roles and Responsibilities
+
+### Derrick
+
+#### New Completions
+- augment the design of pages and forms
+
+#### Next
+- augment the design of the app
+
+### Eddie
+
+#### New Completions
+- augment the design of pages and forms
+
+#### Next
+- augment the design of the app
+
+### Haochen
+
+#### New Completions
+- add description and functionality of site on home page
+
+#### Next
+- augment design of other pages
+
+### Micah
+
+#### New Completions
+- augment the design of pages
+
+#### Next
+- augment the design of the app
+
+
+# Project Conclusion
+
+## Installation of Flick Critik Application
+1) Install Meteor
+2) Download the release version from the link below.
+3) In the command prompt, change directory to the /app of the Flick Critik repo and run the command to install Meteor libraries: 'meteor npm install'.
+4) In the same directory, run the command to start the application: 'meteor npm run start'.
+
+## Final Thoughts
+
+
 ## Link
-https://github.com/team-splendor/flick-critik
+Online Repository:  https://github.com/team-splendor/flick-critik
+Documentation File:  
+Release Version:  
+Wiki Page:  https://github.com/team-splendor/flick-critik/wiki
