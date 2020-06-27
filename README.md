@@ -220,6 +220,6 @@ Looking back at the time we spent working on the project, we had a successful ru
 
 ## Link
 * [Online Repository](https://github.com/team-splendor/flick-critik)
-* Documentation File
+* [Documentation File](https://github.com/team-splendor/flick-critik/blob/master/ICS%20427%20Flick%20Critik%20Report.pdf)
 * [Release Version](https://github.com/team-splendor/flick-critik/releases/tag/v1.0)
 * [Wiki Page](https://github.com/team-splendor/flick-critik/wiki)
