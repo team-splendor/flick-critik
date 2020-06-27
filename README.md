@@ -219,5 +219,5 @@ Looking back at the time we spent working on the project, we had a successful ru
 ## Link
 * [Online Repository](https://github.com/team-splendor/flick-critik)
 * Documentation File:  
-* Release Version:  
+* [Release Version](https://github.com/team-splendor/flick-critik/releases/tag/v1.0)
 * [Wiki Page](https://github.com/team-splendor/flick-critik/wiki)
