@@ -210,7 +210,9 @@ https://github.com/team-splendor/flick-critik
 1) Install Meteor
 2) Download the release version from the link below.
 3) In the command prompt, change directory to the /app of the Flick Critik repo and run the command to install Meteor libraries: 'meteor npm install'.
-4) In the same directory, run the command to start the application: 'meteor npm run start'.
+4) In the same directory, install Sweet Alert (tool used in the application) and run the command to install: 'npm install sweetalert --save'.
+5) In the same directory, run the command to start the application: 'meteor npm run start'.
+6) The Flick Critik application would be accessed at: 'http://localhost:3000/;.
 - Additional details are in the Wiki page [here](https://github.com/team-splendor/flick-critik/wiki/User-Guide)
 
 ## Final Thoughts
@@ -218,6 +220,6 @@ Looking back at the time we spent working on the project, we had a successful ru
 
 ## Link
 * [Online Repository](https://github.com/team-splendor/flick-critik)
-* Documentation File:  
+* Documentation File
 * [Release Version](https://github.com/team-splendor/flick-critik/releases/tag/v1.0)
 * [Wiki Page](https://github.com/team-splendor/flick-critik/wiki)
