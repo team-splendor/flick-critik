@@ -182,18 +182,7 @@ https://github.com/team-splendor/flick-critik
 - augment view movies page
 - augment movie review page
 
-# Week: 06/22/2020 - 06/28/2020
-
-## Progress
-- finished home page
-- finished nav bar/menu
-- finished view movies page
-- finished add review page
-- finished movie review page
-- augment the design of the app
-
-## Pending
-- further augment the design of the app
+# Week: 06/22/2020 - 06/28/2020 (Project Conclusion)
 
 ## Roles and Responsibilities
 
@@ -202,35 +191,20 @@ https://github.com/team-splendor/flick-critik
 #### New Completions
 - augment the design of pages and forms
 
-#### Next
-- augment the design of the app
-
 ### Eddie
 
 #### New Completions
 - augment the design of pages and forms
 
-#### Next
-- augment the design of the app
-
 ### Haochen
 
 #### New Completions
-- add description and functionality of site on home page
-
-#### Next
-- augment design of other pages
+- augmented design of home page
 
 ### Micah
 
 #### New Completions
-- augment the design of pages
-
-#### Next
-- augment the design of the app
-
-
-# Project Conclusion
+- augment the design of view movies page
 
 ## Installation of Flick Critik Application
 1) Install Meteor
@@ -240,10 +214,10 @@ https://github.com/team-splendor/flick-critik
 - Additional details are in the Wiki page [here](https://github.com/team-splendor/flick-critik/wiki/User-Guide)
 
 ## Final Thoughts
-
+Looking back at the time we spent working on the project, we had a successful run. We had a limited amount of time given that this was a summer class but yet we were still able to come together as a team and pull through to put out a final product. Some challenges we had were learning how to follow dynamic analysis for one and another was probably figuring out how to split up the work and resolve merge conflicts when they occurred. We are all proud of how well we worked together to put out our product even in the shortened amount of time. The app itself is not fully complete as there are still features that can be added to imporive it but the basic functionality is there and we are satisfied with our product as a whole. We have all learned a lot throughout the process of making our app and we are glad we can look back at it now and see the final product in a positive light.
 
 ## Link
-* Online Repository:  https://github.com/team-splendor/flick-critik
+* [Online Repository](https://github.com/team-splendor/flick-critik)
 * Documentation File:  
 * Release Version:  
-* Wiki Page:  https://github.com/team-splendor/flick-critik/wiki
+* [Wiki Page](https://github.com/team-splendor/flick-critik/wiki)
